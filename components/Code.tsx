@@ -2,15 +2,11 @@ import React from 'react'
 
 const Code = () => {
   return (
-    <div className='text-zinc-600/50 flex text-[13px] '>
+    <div className='text-zinc-600/50 opacity-90 max-w-6xl rounded-[40px] flex text-[13px] backdrop-blur-lg bg-zinc-800/60'>
 
-        <div className='z-10 relative'>
-          <div className='h-[1px] violet-gradient-2 w-[500px] bg-zinc-600/50'/>
-          <div className='h-[1px] violet-gradient-2 w-[500px] bg-zinc-600/50 mt-2'/>
-          <div className='w-[1px] h-[400px] violet-gradient bg-zinc-600/50'/>
-        </div>
 
-        <div className="absolute pt-5 pl-5 w-[500px] opacity-75">
+
+        <div className=" pt-5 pl-5 w-full opacity-75">
           <p className="text-gray-200 space-y-2 font-mono">
             <span className="text-purple-600">&lt;div </span>
             <span className="text-purple-300">class='container'</span>
