@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button"
 
 export default function Navbar() {
     return (
-        <div className="fixed inset-x-0 backdrop-blur-sm bg-zinc-800/50 top-0 z-50">
-          <nav className="flex justify-center">
+        <div className="fixed inset-x-0 bg-black backdrop-blur-sm bg-zinc-800/50 top-0 z-50">
+          <nav className="flex justify-center bg-black">
             <div className="flex items-center justify-between w-[100%] h-[7vh] max-w-6xl px-6 py-4 space-x-6 sm:space-x-8 md:space-x-12 lg:space-x-16">
               {/* Logo */}
               <Link href="/" className="text-xl font-bold text-white ">
