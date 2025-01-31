@@ -67,7 +67,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={workSans.variable}>
+      <body className={`scroll-smooth overflow-y-auto scrollbar-hide ${workSans.variable}`}>
         {children}
 
       </body>

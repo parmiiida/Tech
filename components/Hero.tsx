@@ -1,17 +1,24 @@
 import Code from "./Code";
+import Image from "next/image";
 
 const Hero = () => {
     return (
-        <div className="w-full flex mt-10 justify-center bg-black items-center w-full overflow-x-hidden scrollbar-hide h-screen relative">
-            <div className="absolute w-[500px] h-[500px] rounded-full bg-purple-600/30 blur-[128px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
-            <div className="max-w-6xl px-9 py-[46px] grid  grid-cols-1 md:grid-cols-2">
+        <div className="w-full bg-[#000000] flex justify-center items-center overflow-x-hidden scrollbar-hide h-screen relative">
+          <Image
+        src="/moon.jpg"
+        layout="fill"
+        objectFit="cover"
+        alt="Background Image"
+        className="opacity-15 object-cover h-full pt-6  bg-white/10 shadow-xl backdrop-blur-xl"
+       />
+            <div className="max-w-6xl px-9 py-[46px] grid pt-48 md:pt-28  grid-cols-1 md:grid-cols-2">
 
             <div className=" h-full space-y-4 flex flex-col  relative z-10">
                 <h1 className="flex text-white text-5xl font-bold"> Tech <br/>   Transforms Ideas <br/> into Digital Experiences</h1>
                 <p>Your partner in modern software development. We craft custom websites, build intuitive mobile apps, and deliver cutting-edge solutions tailored to your vision.</p>
                 <div className="flex flex-row">
                   <button
-                    className="relative inline-flex items-center justify-center p-1  mb-2 me-2 overflow-hidden text-sm font-medium text-white rounded-md bg-gradient-to-br from-purple-600 to-blue-500"
+                    className="relative inline-flex items-center justify-center p-1  mb-2 me-2 overflow-hidden text-sm font-medium text-white rounded-md bg-gradient-to-br from-purple-900 to-blue-500"
                   >
                     <span className="relative px-5 py-2.5">
                       Purple
