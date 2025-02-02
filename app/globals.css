@@ -130,6 +130,27 @@ body {
   background-size: cover;
   background-position: center;
 }
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) translate(100%, 100%);
+  }
+}
 
+.fade-image {
+  animation: fadeOut 3s forwards;
+}
+.black-gradient {
+  background: #000000;
+  background: linear-gradient(-90deg, #000000 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #141414 0%,
+    rgba(60, 51, 80, 0) 100%
+  );}
 
 

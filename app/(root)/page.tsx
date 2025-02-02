@@ -3,6 +3,8 @@ import About from "@/components/About"
 import WhyUs from "@/components/WhyUs"
 import Technologies from "@/components/Technologies";
 import Feedback from "@/components/Feedback";
+import StepByStep from "@/components/StepByStep";
+import Path from "@/components/Path";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <WhyUs />
       <Feedback/>
       {/* <Technologies/> */}
+      {/* <StepByStep/> */}
+      <Path/>
 
     </div>
   );

@@ -7,15 +7,15 @@ const Code = () => {
   const codeRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (typeof window === "undefined") return; // Prevent animations during SSR
+    if (!codeRef.current) return;
 
     const element = codeRef.current;
-    if (!element) return;
 
-    // Setup hover animations
+    // GSAP hover animation
     const enterAnimation = () => {
       gsap.to(element, {
         y: -10,
+        scale: 1.05, // Slight scale effect
         duration: 0.3,
         ease: "power2.out",
       });
@@ -24,15 +24,16 @@ const Code = () => {
     const leaveAnimation = () => {
       gsap.to(element, {
         y: 0,
+        scale: 1, // Reset scale
         duration: 0.3,
         ease: "power2.out",
       });
     };
 
+    // Event listeners
     element.addEventListener("mouseenter", enterAnimation);
     element.addEventListener("mouseleave", leaveAnimation);
 
-    // Cleanup event listeners
     return () => {
       element.removeEventListener("mouseenter", enterAnimation);
       element.removeEventListener("mouseleave", leaveAnimation);
@@ -42,7 +43,7 @@ const Code = () => {
   return (
     <div
       ref={codeRef}
-      className="text-zinc-600/50 opacity-90 max-w-6xl rounded-[40px] flex text-[13px] backdrop-blur-lg bg-zinc-800/60"
+      className="text-zinc-600/50 opacity-90 max-w-6xl rounded-[40px] flex text-[13px] backdrop-blur-lg bg-white/10 transition-transform"
     >
       <div className="pt-5 pl-5 w-full opacity-75">
         <p className="text-gray-200 space-y-2 font-mono">
