@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-
+import Footer from "@/components/Footer";
 
 
 const workSans = localFont({
@@ -69,7 +69,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`scroll-smooth overflow-y-auto scrollbar-hide ${workSans.variable}`}>
         {children}
-
+      <Footer/>
       </body>
     </html>
   );

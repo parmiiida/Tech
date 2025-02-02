@@ -15,16 +15,19 @@ export default function Navbar() {
               {/* Links */}
               <div className="flex text-[13px] space-x-2 sm:space-x-6 md:space-x-8 lg:space-x-10">
                 <a href="/features" className="text-gray-300 nav-hover-btn hover:text-white">
-                  Pricing
+                  Services
                 </a>
                 <a href="/pricing" className="text-gray-300 hover:text-white">
                   Contact
                 </a>
                 <a href="/blog" className="text-gray-300 hover:text-white">
-                    Company
+                  Company
                 </a>
                 <a href="/sign-in" className="text-gray-300 hover:text-white">
                  Customers
+                </a>
+                <a href="/sign-in" className="text-gray-300 hover:text-white">
+                 Blog
                 </a>
               </div>
               {/* Call-to-Action Button */}
