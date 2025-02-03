@@ -17,7 +17,7 @@ export default function Navbar() {
                 <a href="/features" className="text-gray-300 nav-hover-btn hover:text-white">
                   Services
                 </a>
-                <a href="/pricing" className="text-gray-300 hover:text-white">
+                <a href="/Contact" className="text-gray-300 hover:text-white">
                   Contact
                 </a>
                 <a href="/blog" className="text-gray-300 hover:text-white">
@@ -26,9 +26,9 @@ export default function Navbar() {
                 <a href="/sign-in" className="text-gray-300 hover:text-white">
                  Customers
                 </a>
-                <a href="/sign-in" className="text-gray-300 hover:text-white">
+                <Link href="/Blog" className="text-gray-300 hover:text-white">
                  Blog
-                </a>
+                </Link>
               </div>
               {/* Call-to-Action Button */}
               <div className="flex gap-1 text-[11px] shrink-0">

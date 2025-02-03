@@ -85,7 +85,7 @@ const Features = () => {
             {Array.from({ length: 7 }).map((_, i) => (
               <BentoTilt
                 key={i}
-                className=" min-w-[230px] max-w-[280px] h-[309px] flex flex-col justify-between bg-white/5 shadow-xl backdrop-blur-xl bg-gradient-to-r from-white/5 to-black/20 border border-white/15 p-5 rounded-lg overflow-hidden transition-transform duration-100 ease-out"
+                className=" min-w-[230px] max-w-[280px] h-[309px] flex flex-col justify-betweenckdrop-blur-xl bg-gradient-to-r from-white/5 to-black/20 border border-white/15  rounded-lg overflow-hidden transition-transform duration-100 ease-out"
               >
                 <FeedbackCard />
               </BentoTilt>
