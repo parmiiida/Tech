@@ -35,7 +35,7 @@ export default function Navbar() {
                 <Button variant="outline" className="h-[30px] w-[65px] justify-center text-[11px]">
                   <Link href="/signup">Sign Up</Link>
                 </Button>
-                <Button variant="secondary" className="border h-[30px] w-[65px] border-[#5f5f5f] border-[2px] bg-[#494949] text-white text-[11px]">
+                <Button variant="secondary" className=" h-[30px] w-[65px] border-[#5f5f5f] border-[2px] bg-[#494949] text-white text-[11px]">
                   <Link href="/login">Login</Link>
                 </Button>
               </div>

@@ -3,18 +3,24 @@ import Image from "next/image";
 
 const Hero = () => {
     return (
-        <div className="w-full  bg-[#000000] flex justify-center items-center overflow-x-hidden scrollbar-hide h-screen relative">
+        <div className="w-full flex justify-center items-center overflow-x-hidden scrollbar-hide h-dvh relative">
           <Image
         src="/moon.jpg"
-        layout="fill"
+        fill
         objectFit="cover"
         alt="Background Image"
-        className="opacity-15 object-cover h-full   bg-white/10 shadow-xl backdrop-blur-xl"
+        className="opacity-25  object-cover h-screen bg-white/10 shadow-xl  pt-7 "
+        style={{
+          maskImage:
+            "linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.1))",
+          WebkitMaskImage:
+            "linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.1))",
+        }}
        />
-            <div className="max-w-6xl px-9 p-auto grid gap-4  grid-cols-1 md:grid-cols-2">
+            <div className="max-w-6xl px-9 p-auto grid gap-4 space-y-5  grid-cols-1 md:grid-cols-2">
 
-            <div className=" h-full gap-2 flex flex-col relative z-10">
-                <h1 className="flex text-white text-3xl md:text-5xl font-bold"> Tech <br/>   Transforms Ideas <br/> into Digital Experiences</h1>
+            <div className=" h-full gap-4 md:p-4 flex flex-col relative z-10">
+                <h1 className="flex text-white text-3xl md:text-5xl font-bold">Transforms Ideas <br/> into Digital Experiences</h1>
                 <p className="text-xs font-bold text-zinc-400">Your partner in modern software development. We craft custom websites, build intuitive mobile apps, and deliver cutting-edge solutions tailored to your vision.</p>
                 <div className="hidden md:flex flex-row ">
                   <button
@@ -35,7 +41,7 @@ const Hero = () => {
                 </div>
               </div>
 
-              <div className=" flex flex-row ">
+              <div className=" flex flex-row mx-auto ">
 
                 <div className="cursor-pointer opacity-65" >
                   <Code />

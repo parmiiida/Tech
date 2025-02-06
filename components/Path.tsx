@@ -15,9 +15,9 @@ const FadingCard = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-black px-4 md:gap-24 py-10">
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-black px-4 md:gap-24 -mt-12">
       {/* Left Section - Sidebar Navigation */}
-      <div className="flex flex-col items-center md:items-start md:space-y-6 gap-4">
+      <div className="flex flex-col items-center md:items-start md:space-y-6 py-5 gap-4">
         <h1 className="text-white text-2xl font-semibold">lorem hi sdhddh sh balu
         </h1>
 
@@ -26,7 +26,7 @@ const FadingCard = () => {
             <button
               key={item.key}
               onClick={() => setActiveComponent(item.key)}
-              className={`relative text-lg font-medium transition-colors ${
+              className={`relative text-sm font-medium transition-colors ${
                 activeComponent === item.key ? "text-white" : "text-gray-400"
               }`}
             >
@@ -41,7 +41,7 @@ const FadingCard = () => {
 
       {/* Right Section - Card Container */}
       <div
-        className="relative w-full max-w-md md:max-w-lg lg:max-w-lg min-h-[480px] rounded-lg p-1 backdrop-blur-xl border border-white/25"
+        className="relative w-full max-w-md md:max-w-lg lg:max-w-lg min-h-[380px] rounded-lg p-1 backdrop-blur-xl border border-white/25"
         style={{
           maskImage:
             "linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.1))",
@@ -50,7 +50,7 @@ const FadingCard = () => {
         }}
       >
         <div
-          className="relative w-full min-h-[480px] rounded-lg p-6 backdrop-blur-xl border border-white/25"
+          className="relative w-full min-h-[450px] rounded-lg p-6 backdrop-blur-xl border border-white/25"
           style={{
             maskImage:
               "linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.1))",

@@ -43,9 +43,9 @@ const Code = () => {
   return (
     <div
       ref={codeRef}
-      className="text-zinc-600/50 opacity-90 max-w-6xl rounded-[40px] flex text-[13px] backdrop-blur-lg bg-white/10 transition-transform"
+      className="text-zinc-600/50 md:mx-auto opacity-90 max-w-6xl mx-7 rounded-[40px] flex sm:text-[13px] text-[7px] backdrop-blur-lg bg-white/10 transition-transform"
     >
-      <div className="pt-5 pl-5 w-full opacity-75">
+      <div className="p-5 pl-5 w-full opacity-75">
         <p className="text-gray-200 space-y-2 font-mono">
           <span className="text-purple-600">&lt;div </span>
           <span className="text-purple-300">class='container'</span>

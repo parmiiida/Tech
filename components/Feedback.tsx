@@ -61,10 +61,10 @@ const Features = () => {
   };
 
   return (
-    <section className="pb-4 bg-[#000000] relative h-screen overflow-hidden">
-      <div className="container max-w-none mx-auto relative px-5">
+    <section className="pb-4 bg-[#000000] relative -mt-12 overflow-hidden">
+      <div className="container max-w-none mx-auto relative ">
         {/* Section Header */}
-        <div className="pt-24 md:px-[200px] sm:px-[100px] px-auto pb-14">
+        <div className="pt-24 md:px-[200px] px-5 sm:px-[100px]  pb-14">
           <p className="font-circular-web text-lg text-blue-50">Into the Metagame Layer</p>
           <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
             Immerse yourself in a rich and ever-expanding universe where a vibrant array of products converge into an interconnected overlay experience on your world.
