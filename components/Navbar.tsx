@@ -4,6 +4,17 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,9 +36,19 @@ export default function Navbar() {
             <Link href="/Contact" className="text-gray-300 hover:text-white">
               Contact
             </Link>
-            <Link href="/company" className="text-gray-300 hover:text-white">
-              Company
-            </Link>
+              <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <Link href="/Company" className="text-gray-300 hover:text-white">
+                    <NavigationMenuTrigger>Comapny</NavigationMenuTrigger>
+                    <NavigationMenuContent className="bg-black">
+                      <NavigationMenuLink className="text-white">Link</NavigationMenuLink>
+                    </NavigationMenuContent>
+                  </Link>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+
             <Link href="/customers" className="text-gray-300 hover:text-white">
               Customers
             </Link>
@@ -62,7 +83,7 @@ export default function Navbar() {
           <Link href="/Contact" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
             Contact
           </Link>
-          <Link href="/company" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
+          <Link href="/Company" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
             Company
           </Link>
           <Link href="/customers" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
