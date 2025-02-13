@@ -75,7 +75,7 @@ const Features = () => {
         <div className="relative ">
           <div
             ref={scrollRef}
-            className="flex space-x-4 md:px-[200px] sm:px-[100px] px-auto overflow-x-auto no-scrollbar scrollbar-hide"
+            className="flex space-x-2 md:px-[200px] sm:px-[100px] px-auto overflow-x-auto no-scrollbar scrollbar-hide"
             style={{
               scrollBehavior: "smooth",
               width: "100%",
@@ -85,7 +85,7 @@ const Features = () => {
             {Array.from({ length: 7 }).map((_, i) => (
               <BentoTilt
                 key={i}
-                className=" min-w-[230px] max-w-[280px] h-[309px] flex flex-col justify-betweenckdrop-blur-xl bg-gradient-to-r from-white/5 to-black/20 border border-white/15  rounded-lg overflow-hidden transition-transform duration-100 ease-out"
+                className=" min-w-[280px] max-w-[290px] h-[424px] flex flex-col justify-betweenckdrop-blur-xl bg-gradient-to-r from-white/5 to-black/20 border border-white/15  rounded-lg overflow-hidden transition-transform duration-100 ease-out"
               >
                 <FeedbackCard />
               </BentoTilt>

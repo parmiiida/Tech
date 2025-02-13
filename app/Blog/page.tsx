@@ -67,7 +67,7 @@ export default function Blog() {
   const listedPosts = sortedPosts.slice(5)
   return (
     <div className="bg-black text-white justify-center items-center flex ">
-      <div className= "max-w-6xl px-6 md:p-24 md:px-8">
+      <div className= "max-w-6xl px-6 md:p-24 md:px-8 p-16">
       <h1 className="text-4xl font-bold mb-10">Blog</h1>
 
       {/* Featured Posts */}
