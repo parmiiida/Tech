@@ -20,7 +20,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="fixed inset-x-0 backdrop-blur-lg top-0 z-50 ">
+    <div className="fixed inset-x-0 backdrop-blur-lg bg-black/70 top-0 z-50 ">
       <nav className="flex justify-center relative">
         <div className="flex items-center justify-between w-[100%] h-[7vh] max-w-6xl px-6 py-4">
           {/* Logo */}
@@ -38,14 +38,26 @@ export default function Navbar() {
             </Link>
               <NavigationMenu>
               <NavigationMenuList>
-                <NavigationMenuItem>
-                  <Link href="/Company" className="text-gray-300 hover:text-white">
-                    <NavigationMenuTrigger>Comapny</NavigationMenuTrigger>
-                    <NavigationMenuContent className="bg-black">
-                      <NavigationMenuLink className="text-white">Link</NavigationMenuLink>
-                    </NavigationMenuContent>
-                  </Link>
-                </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="text-gray-300 hover:text-white">
+                  Company
+                </NavigationMenuTrigger>
+                <NavigationMenuContent className="bg-zinc-900 h-auto">
+
+                  <NavigationMenuLink asChild>
+                    <Link href="/Company" className="text-white/60 hover:text-white">
+                    <div className="w-108 border-white/10 p-1">
+                      <div className="grid grid-cols-2 w-96 border border-white/10">
+                        <div className="border  border-white/10 p-3 w-full h-full">
+                          <p>Lorem ipsum...</p>
+                        </div>
+                        <div className="border  border-white/10 p-3 w-full">bye</div>
+                      </div>
+                    </div>
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
 
