@@ -19,6 +19,7 @@ import {
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
+
   return (
     <div className="fixed inset-x-0 backdrop-blur-lg bg-black/70 top-0 z-50 ">
       <nav className="flex justify-center relative">
@@ -30,7 +31,7 @@ export default function Navbar() {
 
           {/* Desktop Links */}
           <div className="hidden sm:flex text-[13px] space-x-6">
-            <Link href="/features" className="text-gray-300 hover:text-white">
+            <Link href="/Services" className="text-gray-300 hover:text-white">
               Services
             </Link>
             <Link href="/Contact" className="text-gray-300 hover:text-white">
@@ -42,19 +43,17 @@ export default function Navbar() {
                 <NavigationMenuTrigger className="text-gray-300 hover:text-white">
                   Company
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="bg-zinc-900 h-auto">
-
+                <NavigationMenuContent className="bg-black/90 h-auto">
                   <NavigationMenuLink asChild>
-                    <Link href="/Company" className="text-white/60 hover:text-white">
-                    <div className="w-108 border-white/10 p-1">
-                      <div className="grid grid-cols-2 w-96 border border-white/10">
-                        <div className="border  border-white/10 p-3 w-full h-full">
-                          <p>Lorem ipsum...</p>
+                    <div className="w-108 text-white/70 border-white/10 p-1">
+                      <div className="grid grid-rows-2 grid-cols-2 w-96 border border-white/10">
+                        <div className="border sm:row-span-2  border-white/10 p-3 w-full h-full">
+                        <Link href='/Company/longTerm' className=" hover:text-white">Long term partnership</Link>
                         </div>
-                        <div className="border  border-white/10 p-3 w-full">bye</div>
+                        <Link href='/Company/individual' className="border hover:text-white p-3 border-white/10">Individual Projects </Link>
+                        <Link href='/Company/business' className="border hover:text-white  border-white/10 p-3 w-full">Business Projects </Link>
                       </div>
                     </div>
-                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -89,14 +88,19 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="absolute top-[7vh] left-0 w-full bg-black/90  backdrop-blur-md md:hidden flex flex-col items-center py-4 space-y-4">
-          <Link href="/features" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
+          <Link href="/Services" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
             Services
           </Link>
           <Link href="/Contact" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
             Contact
           </Link>
-          <Link href="/Company" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
-            Company
+          <Link href="/Company/longTerm" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
+            Long term
+          </Link>
+          <Link href="/Company/business" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
+            business projects
+          </Link><Link href="/Company/individual" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
+            Individual projects
           </Link>
           <Link href="/customers" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
             Customers

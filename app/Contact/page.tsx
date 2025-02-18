@@ -129,8 +129,8 @@ const Page = () => {
                 {/* Submit Button */}
                 <Button
                   type="submit"
-                  className="w-full p-3 bg-[#00c9a7] text-black font-semibold rounded-lg
-                             hover:bg-[#00b398] transition"
+                  className="w-full p-3 bg-[#26bdee] text-black font-semibold rounded-lg
+                             hover:bg-[#1ca3d0] transition"
                 >
                   Submit 🚀
                 </Button>
